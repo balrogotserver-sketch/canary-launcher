@@ -155,7 +155,7 @@ namespace CanaryLauncherUpdate
         clientExecutableName = clientConfig.clientExecutable;
 
         AddReadOnly();
-        CreateShortcut();
+        //CreateShortcut();
 
         currentPlan = await clientUpdater.DetermineUpdatePlanAsync(clientConfig, CancellationToken.None).ConfigureAwait(true);
         ApplyUpdatePlan();
